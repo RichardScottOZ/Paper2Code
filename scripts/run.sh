@@ -1,5 +1,8 @@
 # export OPENAI_API_KEY=""
 
+# openrouter
+export OPENROUTER_API_KEY="your-openrouter-api-key"
+
 GPT_VERSION="o3-mini"
 
 PAPER_NAME="Transformer"
