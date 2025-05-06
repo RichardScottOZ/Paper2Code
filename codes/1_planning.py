@@ -17,8 +17,10 @@ parser.add_argument('--output_dir',type=str, default="")
 
 args    = parser.parse_args()
 
+
 client = OpenAI(api_key = os.environ["OPENAI_API_KEY"])
 
+##openrouter
 from openrouter import OpenRouter  
 client = OpenRouter(api_key=os.environ["OPENROUTER_API_KEY"])
 
@@ -230,6 +232,14 @@ def api_call(msg, gpt_version):
         )
 
     return completion 
+
+##openrouter
+def api_call(msg, model_name):  
+    completion = client.chat.completions.create(  
+        model=model_name,  # OpenRouter model identifier  
+        messages=msg  
+    )  
+    return completion    
 
 responses = []
 trajectories = []
