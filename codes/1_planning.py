@@ -19,6 +19,9 @@ args    = parser.parse_args()
 
 client = OpenAI(api_key = os.environ["OPENAI_API_KEY"])
 
+from openrouter import OpenRouter  
+client = OpenRouter(api_key=os.environ["OPENROUTER_API_KEY"])
+
 paper_name = args.paper_name
 gpt_version = args.gpt_version
 paper_format = args.paper_format
