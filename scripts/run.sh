@@ -4,6 +4,8 @@
 export OPENROUTER_API_KEY="your-openrouter-api-key"
 
 GPT_VERSION="o3-mini"
+# openrouter
+GPT_VERSION="openrouter/anthropic/claude-3-opus:2024-01-01"  # Or any other model available on OpenRouter
 
 PAPER_NAME="Transformer"
 PDF_PATH="../examples/Transformer.pdf" # .pdf
